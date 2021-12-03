@@ -1,17 +1,11 @@
-<<<<<<< HEAD
-=======
 #include <cmath>
->>>>>>> f7f8d2d (Initial commit)
 #include <iostream>
 #include <vector>
 #include <deque>
 #include <list>
-<<<<<<< HEAD
-=======
 #include <algorithm>
 #include <random>
 #include <ctime>
->>>>>>> f7f8d2d (Initial commit)
 
 template <class Container, class T>
 void insert_sorted(Container& container, const T& item) {
@@ -28,8 +22,6 @@ void printContainer(Container& container, std::string name) {
     std::cout << std::endl;
 }
 
-<<<<<<< HEAD
-=======
 std::vector<float> operator-(const std::vector<float> &a, const std::vector<int> &b){
 
     if (a.size() != b.size())
@@ -42,7 +34,6 @@ std::vector<float> operator-(const std::vector<float> &a, const std::vector<int>
     return c;
 }
 
->>>>>>> f7f8d2d (Initial commit)
 void task_1() {
     std::vector<int> vec_int{ 1,2,3,4,5 };
     insert_sorted(vec_int, 4);
@@ -69,13 +60,7 @@ void task_1() {
     printContainer(list_float, "list_float");
 }
 
-int main()
-{
-<<<<<<< HEAD
-    task_1();
-=======
-    //task_1();
-
+void task_2(){
     std::mt19937 gen(time(0));
     std::uniform_real_distribution<> urd(0, 100);
 
@@ -97,6 +82,12 @@ int main()
     auto sum = std::accumulate(tmp.begin(), tmp.end(), 0.0);
 
     std::cout << "Sum = " << sum;
->>>>>>> f7f8d2d (Initial commit)
+
+}
+
+int main()
+{
+    //task_1();
+    task_2();
 
 }
